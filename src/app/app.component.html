@@ -1,8 +1,11 @@
-<div class="container">
-    <div style="text-align:center">
-        <h1>
-            Routing and Navigation
-        </h1>
-    </div>
-    <router-outlet></router-outlet>
-</div>
+<nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li>
+            <a routerLink="employees">List</a>
+        </li>
+        <li>
+            <a routerLink="create">Create</a>
+        </li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
