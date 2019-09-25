@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms'
 
 @Component({
   selector: 'app-create-employee',
@@ -8,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class CreateEmployeeComponent implements OnInit {
 
   constructor() { }
-
+   gender='male'
   ngOnInit() {
   }
+  saveEmpoyee(empForm: NgForm): void {
 
+    console.log(empForm);
+  }
 }
